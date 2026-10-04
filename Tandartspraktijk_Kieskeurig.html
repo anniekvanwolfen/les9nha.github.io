@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+        <title>Tandartsafspraak</title>
+</head>
+<body>
+    <h1><strong>Tandartsafspraak</strong></h1>
+    <p>Tandartspraktijk Kieskeurig is een moderne en patiëntvriendelijke tandartspraktijk waar persoonlijke zorg centraal staat.
+         Het team helpt patiënten met<br> controles, mondhygiëne, vullingen en andere tandheelkundige behandelingen. Door
+        duidelijke uitleg en een rustige sfeer zorgt Kieskeurig ervoor dat<br> patiënten zich op hun gemak voelen. Preventie
+         staat hoog in het vaandel, zodat problemen aan het gebit zoveel mogelijk worden voorkomen.</p>
+    <figure>
+        <img src="Afbeeldingen_tandartspraktijk/tandarts_foto1.jpg" alt="" title="tandarts" width="300">
+        <img src="Afbeeldingen_tandartspraktijk/tandarts_foto2.jpg" alt="" title="gezonde tanden" width="300" height="533">
+        <img src="Afbeeldingen_tandartspraktijk/tandarts_foto3.jpg" alt="" title="mooie tanden" width="300" height="533">
+    </figure><br>
+
+    Voor het maken van een afspraak dient u onderstaand formulier zo volledig mogelijk in te vullen.
+    <form id="Tandartsafspraak" action="https://formspree.io/f/mjykppqj" method="post">
+        <fieldset>
+            <legend><h4><b>Persoonlijke gegevens</b></h4></legend>
+        <table width="500" border="0">
+        <tbody>
+        <tr>    
+            <td><label for="naam">Naam:</label></td>
+            <td><input id="naam" type="text" name="naam"></td> 
+        </tr>
+        <tr>
+            <td>Geslacht:</td>
+            <td><input type="radio" name="geslacht" value="man" checked>Man
+            <input type="radio" name="geslacht" value="vrouw">Vrouw
+            <input type="radio" name="geslacht" value="anders">Anders</td>
+            <td>
+        </tr>
+        <tr>
+            <td><label for="adres">Adres:</label></td>
+            <td><input type="text" id="adres" name="adres"></td>
+        </tr>
+        <tr>
+            <td><label for="postcode">Postcode:</label></td>
+            <td><input type="text" id="postcode" name="postcode"></td>
+        </tr>
+        <tr>
+            <td><label for="woonplaats">Woonplaats:</label></td>
+            <td><input type="text" id="woonplaats" name="woonplaats"></td>
+        </tr>
+        <tr>
+            <td><label for="geboortedatum">Uw geboortedatum:</label></td>
+            <td><input type="date" id="geboortedatum" name="geboortedatum" max="2036-12-31"></td>
+        </tr>
+        <tr>
+            <td><label for="telefoonnummer">Uw telefoonnummer:</label></td>
+            <td><input type="tel" id="telefoonnummer" name="telefoonnummer"></td>
+        </tr>
+        <tr>
+            <td><label for="emailadres">Uw e-mailadres:</label></td>
+            <td><input type="email" id="emailadres" name="e-mailadres"></td>
+        </tr>
+        </tbody>       
+</table>
+</fieldset>
+<fieldset>
+    <legend><h4>Beschrijving van de klachten</h4></legend>
+    <b>Selecteer uw klachten/ reden voor afspraak:</b><br>
+    <input type="checkbox" name="klachten" value="tandpijn">Tandpijn<br>
+    <input type="checkbox" name="klachten" value="klachten aan het tandvlees">Klachten aan het tandvlees<br>
+    <input type="checkbox" name="klachten" value="Loszittende tand of kies">Loszittende tand of kies<br>
+    <input type="checkbox" name="klachten" value="Afgebroken tand of kies">Afgebroken tand of kies<br>
+    <input type="checkbox" name="klachten" value="Kroon, brug of andere restauratie los/beschadigd">Kroon, brug of andere restauratie los/beschadigd<br>
+    <input type="checkbox" name="klachten" value="Cosmetische klacht (bijv. verkleuring of stand van tanden)">Cosmetische klacht (bijv. verkleuring of stand van tanden)<br>
+    <input type="checkbox" name="klachten" value="anders, namelijk...(vul in bij 'Toelichting van de klachten')">Anders, namelijk...(vul in bij 'Toelichting van de klachten')<br><br>
+    <b>Heeft u een foto van de klacht? Upload deze dan hieronder.</b><br><br>
+    <label for="fotoklacht">Foto van de klacht:</label>
+    <input type="file" id="fotoklacht" name="foto klacht"><br><br>
+</fieldset>
+<fieldset>
+    <legend><h4>Toelichting van de klachten</h4></legend>
+    <b>Beschrijf uw klacht</b>
+    <p>Omschrijf uw klacht hieronder zo duidelijk en uitgebreid mogelijk. Geef bijvoorbeeld aan wanneer de klachten zijn begonnen, waar u precies last<br>
+         van heeft, hoe de klachten aanvoelen en of er momenten zijn waarop de klachten erger of juist minder worden. U kunt maximaal 1.500 tekens gebruiken.</p>
+    <textarea name="beschrijving klachten" maxlength="1500"></textarea><br><br>
+    <b>Selecteer hier de de dag waarop u een afspraak zou willen maken:</b><br><br>
+        <input type="date" name="datum" min="2026-10-01" max="2036-12-31"><br><br>
+</fieldset><br>
+    <input type="submit" value="Formulier verzenden"> <br>
+    <p>De assistent zal zo snel mogelijk contact met u opnemen om de afspraak te bevestigen.</p>
+</form>
+</body>
+</html>
